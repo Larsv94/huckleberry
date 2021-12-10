@@ -54,6 +54,9 @@ header {
 .intro-chunk strong {
   color: var(--color-primary);
 }
+.intro-chunk p {
+  font-size: 1.25rem;
+}
 
 main {
   padding-top: var(--spacing-12);
