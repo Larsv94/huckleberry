@@ -1,12 +1,73 @@
 * {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
+
+  font-size: 18px;
+  min-height: 100%;
+  background-color: var(--gray-100);
+
+  --color-primary: hsl(160deg, 100%, 30%);
+  --color-secondary-light: hsl(45deg, 100%, 50%);
+  --color-secondary-dark: hsl(45deg, 100%, 40%);
+
+  --gray-900: hsl(0deg, 0%, 0%);
+  --gray-700: hsl(0deg, 0%, 10%);
+  --gray-500: hsl(0deg, 0%, 30%);
+  --gray-300: hsl(0deg, 0%, 40%);
+  --gray-100: hsl(0deg, 0%, 60%);
+  --gray-000: hsl(0deg, 0%, 100%);
+
+  --spacing-1: 8px;
+  --spacing-2: 16px;
+  --spacing-3: 24px;
+  --spacing-4: 32px;
+  --spacing-6: 48px;
+  --spacing-8: 64px;
+  --spacing-12: 96px;
+  --spacing-16: 128px;
 }
 
 /* Add styles here! */
+header {
+  background-color: var(--gray-000);
+  border-bottom: 5px solid var(--gray-300);
+}
+.max-width-wrapper {
+  max-width: 700px;
+  margin-inline: auto;
+}
+.intro-chunk {
+  max-width: 40ch;
+  padding-top: var(--spacing-8);
+  padding-bottom: var(--spacing-6);
+  padding: var(--spacing-4);
+}
+.title {
+  margin-bottom: var(--spacing-6);
+}
+.intro-chunk strong {
+  color: var(--color-primary);
+}
+
+main {
+  padding-top: var(--spacing-12);
+}
+.card {
+  padding: var(--spacing-4);
+  background-color: var(--gray-000);
+  margin: auto;
+}
+.indented-heading {
+  width: fit-content;
+  background-color: var(--color-secondary-light);
+  padding: var(--spacing-2) var(--spacing-4);
+  border-bottom: 5px solid var(--color-secondary-dark);
+  margin-left: calc(var(--spacing-6) * -1);
+  margin-top: calc(var(--spacing-2) * -1);
+}
